@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Etch-A-Sketch</title>
+	
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+
+<h1>Etch-A-Sketch</h1>
+<div class="buttons">
+	<button onclick="gridSize()">Grid size</button>
+	<button onclick="clearGrid()">Clear grid</button>
+	<input type="checkbox" checked onchange = "showBorders()">Borders
+	&nbsp;&nbsp;&nbsp;&nbsp;
+	<select onchange = "selectColor()">
+		<option value="Black">Black</option>
+		<option value="Blue ">Blue </option>
+		<option value="Brown ">Brown </option>
+		<option value="Green">Green</option>
+		<option value="Red">Red</option>
+		<option value="Yellow">Yellow</option>
+		<option value="Aqua">Aqua</option>
+		<option value="Chocolate">Chocolate</option>
+		<option value="Fuchsia">Fuchsia</option>
+		<option value="Gold">Gold</option>
+		<option value="Indigo">Indigo</option>
+		<option value="Lime">Lime</option>
+		<option value="Maroon">Maroon</option>
+		<option value="Navy">Navy</option>
+		<option value="Orange">Orange</option>
+	</select>
+	<button onclick ="changeColor()">Random color</button>
+	<button onclick ="tuttiFrutti()">Tutti Frutti</button>
+	<button onclick ="gradient()">Gradient</button>
+</div>
+
+<div class="container"></div>
+
+<script src="custom.js"></script>
+</body>
+</html>
